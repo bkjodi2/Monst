@@ -11,5 +11,5 @@ install:
   - python3 -m pip install telebot flask pymongo aiohttp python-telegram-bot
 
 script:
-  - chmod +x monster
+  - chmod +x Smokie
   - python3 monster.py
